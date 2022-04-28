@@ -47,8 +47,8 @@
               <tr th:each="s : ${books}">
                 <td scope="col" th:text="${s.title}"></td>
                 <td scope="col" th:text="${s.author}"></td>
-                <td scope="col" th:text="${s.price}"></td>
-                <td scope="col" th:text="${s.stock}"></td>
+                <td scope="col" th:text="${'Rp'+ s.price}"></td>
+                <td scope="col" th:text="${s.stock +' pcs'}"></td>
                 <td scope="col">
                   <a class="btn btn-sm btn-primary" role="button" th:href="${'/detail/'+s.id}"><span><i
                         class="fa fa-info-circle me-2"></i>Detail</span></a>
